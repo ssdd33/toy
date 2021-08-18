@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --point: #3b5998;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#timer {
+  font-size: 3rem;
+  margin-top: 2rem;
+}
+#puzzle_wrapper {
+  margin-top: 1rem;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+li {
+  list-style: none;
+
+  width: 100px;
+  height: 100px;
+  background: url("https://placeimg.com/400/400/0");
+}
+.list0 {
+  background-position-y: 0px;
+  background-position-x: 0px;
+}
+.list1 {
+  background-position-y: 0px;
+  background-position-x: -100px;
+}
+.list2 {
+  background-position-y: 0px;
+  background-position-x: -200px;
+}
+.list3 {
+  background-position-y: 0px;
+  background-position-x: -300px;
+}
+.list4 {
+  background-position-y: -100px;
+  background-position-x: 0px;
+}
+.list5 {
+  background-position-y: -100px;
+  background-position-x: -100px;
+}
+.list6 {
+  background-position-y: -100px;
+  background-position-x: -200px;
+}
+.list7 {
+  background-position-y: -100px;
+  background-position-x: -300px;
+}
+.list8 {
+  background-position-y: -200px;
+  background-position-x: 0px;
+}
+.list9 {
+  background-position-y: -200px;
+  background-position-x: -100px;
+}
+.list10 {
+  background-position-y: -200px;
+  background-position-x: -200px;
+}
+.list11 {
+  background-position-y: -200px;
+  background-position-x: -300px;
+}
+.list12 {
+  background-position-y: -300px;
+  background-position-x: 0px;
+}
+.list13 {
+  background-position-y: -300px;
+  background-position-x: -100px;
+}
+.list14 {
+  background-position-y: -300px;
+  background-position-x: -200px;
+}
+.list15 {
+  background-position-y: -300px;
+  background-position-x: -300px;
+}
+#play_btn {
+  background-color: var(--point);
+  color: white;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  border: none;
+}
+
+#game_message {
+  position: absolute;
+  font-size: 45px;
+  color: #67c23a;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+  display: none;
+}
